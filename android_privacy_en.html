@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Daruj App</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; background-color: #fff; }
+        h1 { color: #e63946; font-size: 24px; border-bottom: 2px solid #e63946; padding-bottom: 10px; }
+        h2 { color: #111; font-size: 18px; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p><strong>App:</strong> Daruj (Android)</p>
+    <p><strong>Author:</strong> Jakub Harašta</p>
+    <p><strong>Last updated:</strong> September 18, 2026</p>
+
+    <p>The Daruj Android application is designed with a primary focus on user privacy and fully complies with the General Data Protection Regulation (GDPR). The app operates primarily offline as an independent personal blood and blood components donors journal.</p>
+
+    <h2>1. Local Data Storage</h2>
+    <p>All personal user data (donation history, profile settings, preferred donation center, and local cache) is stored exclusively in secure local device storage (via Room Database and Jetpack DataStore).</p>
+    <ul>
+        <li>This data <strong>is never sent to any external servers</strong> or cloud storage.</li>
+        <li>Your personal records and health preferences <strong>are never used for advertising purposes</strong>, marketing, or provided to third parties.</li>
+    </ul>
+
+    <h2>2. Cloud Services and Network Data (Firebase)</h2>
+    <p>The application uses Google Firebase exclusively for technical purposes and synchronization:</p>
+    <ul>
+        <li><strong>Firebase Remote Config:</strong> For fetching current configuration data, the educational knowledge base for the donation guide, and offline-first synchronization of donation centers and eligibility questionnaire.</li>
+        <li><strong>Blood Barometer:</strong> Current blood supply levels are obtained through automated data collection (scraping) from publicly available official websites of hospital transfusion departments.</li>
+    </ul>
+    <p>No personal identifiers or sensitive health data are sent to the cloud.</p>
+
+    <h2>3. Complete Data Deletion</h2>
+    <p>Users have full control over their data. The app settings include a data reset feature that immediately and permanently deletes all saved records, donation history, and settings, returning the app to its initial post-installation state.</p>
+</body>
+</html>

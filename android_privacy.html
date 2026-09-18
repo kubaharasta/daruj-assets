@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zásady ochrany osobních údajů – Aplikace Daruj</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; background-color: #fff; }
+        h1 { color: #e63946; font-size: 24px; border-bottom: 2px solid #e63946; padding-bottom: 10px; }
+        h2 { color: #111; font-size: 18px; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Zásady ochrany osobních údajů</h1>
+    <p><strong>Aplikace:</strong> Daruj (Android)</p>
+    <p><strong>Autor:</strong> Jakub Harašta</p>
+    <p><strong>Poslední aktualizace:</strong> 18. 9. 2026</p>
+
+    <p>Aplikace Daruj pro platformu Android je navržena s maximálním důrazem na soukromí uživatelů a plně respektuje obecné nařízení o ochraně osobních údajů (GDPR). Aplikace funguje primárně offline jako nezávislý osobní deník dárců krve a krevních složek.</p>
+
+    <h2>1. Lokální úložiště dat</h2>
+    <p>Veškerá osobní data uživatele (historie odběrů, nastavení profilu, preferované odběrové místo a lokální cache) jsou uložena výhradně v zabezpečeném lokálním úložišti zařízení (prostřednictvím Room Database a Jetpack DataStore).</p>
+    <ul>
+        <li>Tato data <strong>nejsou odesílána na žádné externí servery</strong> ani cloudová úložiště.</li>
+        <li>Vaše osobní záznamy a zdravotní preference <strong>nikdy nejsou využívána pro reklamní účely</strong>, marketing ani nejsou poskytována třetím stranám.</li>
+    </ul>
+
+    <h2>2. Cloudové služby a síťová data (Firebase)</h2>
+    <p>Aplikace využívá platformu Google Firebase výhradně pro technické účely a synchronizaci:</p>
+    <ul>
+        <li><strong>Firebase Remote Config:</strong> Pro stahování aktuálních konfiguračních dat, znalostní báze pro průvodce a offline-first synchronizaci dat o odběrových místech a předodběrovém dotazníku.</li>
+        <li><strong>Krevní barometr:</strong> Aktuální stavy krevních zásob jsou získávány automatizovaným sběrem (scrapingem) z veřejně dostupných oficiálních stránek transfuzních oddělení.</li>
+    </ul>
+    <p>Do cloudu nejsou odesílány žádné osobní identifikátory ani citlivé údaje o vašem zdravotním stavu.</p>
+
+    <h2>3. Kompletní smazání dat</h2>
+    <p>Uživatel má plnou kontrolu nad svými daty. V nastavení aplikace je k dispozici funkce pro kompletní smazání dat, která okamžitě a nevratně odstraní všechny uložené záznamy, historii odběrů i nastavení a vrátí aplikaci do stavu po první instalaci.</p>
+</body>
+</html>
